@@ -1,10 +1,16 @@
 # Sudoku Solver using Backtracking Algorithm
-This Python script provides a CLI Sudoku puzzle generator and solver using **backtracking algorithm.**
+
+This Python script provides a CLI Sudoku puzzle generator and solver using backtracking algorithm. It is designed to offer a hands-on experience in implementing and understanding the intricacies of backtracking while solving Sudoku puzzles.
 
 <br/> 
 
 ## Sudoku
 Sudoku is a classic number-placement puzzle where the objective is to fill a square grid with numbers so that each column, each row, and each of the subgrids (also known as boxes) contain all of the numbers from 1 to 9 (or 1 to 4 for smaller puzzles) without repetition.
+
+
+![image](https://github.com/AswinPKumar01/Sudoku-Solver/assets/118362715/620bc177-5fbf-4dee-8c13-3e07da108435)
+
+(classic sudoku image from adobe stock)
 
 <br/> 
 
@@ -18,6 +24,7 @@ Sudoku is a classic number-placement puzzle where the objective is to fill a squ
 
 https://github.com/AswinPKumar01/Sudoku-Solver/assets/118362715/7b0fa9ef-3d89-42cc-bc1a-49ed3bc74a98
 
+<br/> 
 
 ## Backtracking Algorithm
 The heart of this Sudoku solver lies in the backtracking algorithm, a powerful technique for solving problems that involve making a sequence of decisions. In the context of Sudoku, the backtracking algorithm explores possible number placements, backtracking when it encounters an invalid move, until a valid solution is found.
