@@ -7,6 +7,7 @@ This Python script provides a CLI Sudoku puzzle generator and solver using backt
 ## Sudoku
 Sudoku is a classic number-placement puzzle where the objective is to fill a square grid with numbers so that each column, each row, and each of the subgrids (also known as boxes) contain all of the numbers from 1 to 9 (or 1 to 4 for smaller puzzles) without repetition.
 
+<br/> 
 
 ![image](https://github.com/AswinPKumar01/Sudoku-Solver/assets/118362715/620bc177-5fbf-4dee-8c13-3e07da108435)
 
