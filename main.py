@@ -22,22 +22,19 @@ def SudokuSolver(board):
 def ValidMoveCheck(board, num, pos):
     row, col = pos
 
-    for i in range(len(board[0])):
-        if board[row][i] == num and col != i:
-            return False
+    if num in board[row]:
+        return False
 
-    for i in range(len(board)):
-        if board[i][col] == num and row != i:
-            return False
+    if num in set(board[i][col] for i in range(len(board))):
+        return False
 
     box_start_row, box_start_col = 3 * (row // 3), 3 * (col // 3)
 
-    for i in range(box_start_row, box_start_row + 3):
-        for j in range(box_start_col, box_start_col + 3):
-            if board[i][j] == num and (i, j) != pos:
-                return False
+    if num in set(board[i][j] for i in range(box_start_row, box_start_row + 3) for j in range(box_start_col, box_start_col + 3)):
+        return False
 
     return True
+
 
 def DisplayBoard(board):
     result = ""
