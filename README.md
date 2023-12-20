@@ -2,6 +2,8 @@
 
 This Python script provides a CLI Sudoku puzzle generator and solver using backtracking algorithm. It is designed to offer a hands-on experience in implementing and understanding the intricacies of backtracking while solving Sudoku puzzles.
 
+An updated Sudoku Solver with GUI can be accessed [here](https://github.com/AswinPKumar01/Sudoku-Solver-with-GUI).
+
 <br/> 
 
 ## Sudoku
@@ -67,5 +69,9 @@ The backtracking algorithm ensures an efficient and systematic approach to solvi
 ## Author
 
 - Coded with ♥️ by [Aswin P Kumar](https://linktr.ee/aswinpkumar)
+
+## Acknowledgments
+
 - Thanks to various resources and tutorials on Sudoku that guided me at different stages of learning
-- A more updated version is coming soon
+- An updated version with GUI can be accessed [here](https://github.com/AswinPKumar01/Sudoku-Solver-with-GUI).
+
