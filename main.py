@@ -30,12 +30,14 @@ def ValidMoveCheck(board, num, pos):
     if num in set(board[i][col] for i in range(len(board))):
         return False
 
-    box_start_row, box_start_col = 3 * (row // 3), 3 * (col // 3)
+    box_size = int(len(board) ** 0.5)
+    box_start_row, box_start_col = box_size * (row // box_size), box_size * (col // box_size)
 
-    if num in set(board[i][j] for i in range(box_start_row, box_start_row + 3) for j in range(box_start_col, box_start_col + 3)):
+    if num in set(board[i][j] for i in range(box_start_row, box_start_row + box_size) for j in range(box_start_col, box_start_col + box_size)):
         return False
 
     return True
+
 
 
 def DisplayBoard(board):
