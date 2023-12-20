@@ -1,4 +1,6 @@
 import random
+import time
+
 
 def SudokuSolver(board):
     empty_cell = FindEmptyCell(board)
@@ -97,6 +99,16 @@ def GenerateBoard(difficulty, board_size):
     RemoveNumbers(board, difficulty)
 
     return board, solved_board
+    
+def measure_solver_performance(solver_function, board):
+    start_time = time.time()
+    solved = solver_function(board)
+    end_time = time.time()
+
+    if solved:
+        print(f"Sudoku solved in {end_time - start_time:.4f} seconds.")
+    else:
+        print("No solution found.")
 
 def UserInput(prompt, is_integer=True):
     while True:
@@ -119,3 +131,6 @@ print(DisplayBoard(generated_board))
 
 print("\nSudoku Board Solution: \n")
 print(DisplayBoard(solution))
+
+
+measure_solver_performance(SudokuSolver, generated_board)
