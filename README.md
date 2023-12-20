@@ -11,19 +11,37 @@ Sudoku is a classic number-placement puzzle where the objective is to fill a squ
 
 ![image](https://github.com/AswinPKumar01/Sudoku-Solver/assets/118362715/620bc177-5fbf-4dee-8c13-3e07da108435)
 
-(classic sudoku image from adobe stock)
+_(classic sudoku image from adobe stock)_
 
 <br/> 
 
 ## Usage
-- To use the script, simply save it to your local machine and run it.
-- Provide the desired difficulty level (1-9) and Sudoku board size (4 for 4x4, 9 for 9x9) when prompted in the CLI. The script will generate a Sudoku puzzle for you to solve and display both the initial puzzle and the solution.
+1. Save the script to your local machine.
+2. Run the script.
+3. When prompted, enter the desired difficulty level (1-9) and Sudoku board size (4 for 4x4, 9 for 9x9).
+4. The script will generate a Sudoku puzzle for you to solve and display both the initial puzzle and the solution.
+   
+<br/> 
+
+## Function Descriptions
+
+- **SudokuSolver**: The main function that utilizes backtracking to recursively fill in empty cells on the Sudoku board.
+- **ValidMoveCheck**: Checks if a move is valid by examining the row, column, and box constraints.
+- **DisplayBoard**: Creates a visual representation of the Sudoku board.
+- **FindEmptyCell**: Finds the first empty cell on the Sudoku board.
+- **GenerateBoard**: Generates a Sudoku board with a solution and removes numbers based on difficulty.
+
+<br/> 
+
+## Performance Measurement
+
+The script includes a function, `measure_solver_performance`, which measures the time taken by the `SudokuSolver` function to solve a Sudoku puzzle.
 
 <br/> 
 
 ## Demo
 
-https://github.com/AswinPKumar01/Sudoku-Solver/assets/118362715/7b0fa9ef-3d89-42cc-bc1a-49ed3bc74a98
+https://github.com/AswinPKumar01/Sudoku-Solver/assets/118362715/151c3c49-627e-4b6a-a085-17fafc31f7cb
 
 <br/> 
 
@@ -43,6 +61,8 @@ I developed this script as a way to solidify my understanding of Data Structures
 - This process continues until a solution is found or all possibilities are exhausted.
 
 The backtracking algorithm ensures an efficient and systematic approach to solving Sudoku puzzles, making it an ideal choice for this project. The script also includes functions for checking the validity of a move (ValidMoveCheck), displaying the Sudoku board (DisplayBoard), and finding an empty cell (FindEmptyCell).
+
+<br/> 
 
 ## Author
 
